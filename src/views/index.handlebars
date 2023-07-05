@@ -1,0 +1,10 @@
+<h1> Index </h1>
+{{#if products.length}}
+    {{#each products}}
+        <ul>
+            <li>{{title}} - ${{price}} - stock:{{stock}}</li>
+        </ul>
+    {{/each}}
+    {{else}}
+        <p>No hay productos</p>
+{{/if}}

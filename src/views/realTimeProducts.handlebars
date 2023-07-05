@@ -1,0 +1,13 @@
+<h1> Real Time Products </h1>
+{{#if products.length}}
+    {{#each products}}
+        <ul>
+            <li>{{title}} - ${{price}} - stock:{{stock}}</li>
+        </ul>
+    {{/each}}
+    {{else}}
+        <p>No hay productos</p>
+{{/if}}
+
+<script src="/socket.io/socket.io.js" charset="utf-8"></script>
+<script src="js/realTimeProducts.js"></script>
